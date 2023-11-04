@@ -34,5 +34,12 @@ let server = http.createServer((req,res)=> {
         res.end(data);
       };
     }); 
-  }
-  })
+
+    
+
+  } 
+
+let port = 1004
+server.listen(port, () => {
+  console.log(`http://localhost:${port}`);
+})
